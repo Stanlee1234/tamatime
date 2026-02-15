@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://cu0xlkni363n6"]
+
+[ext_resource type="Texture2D" uid="uid://bm14dk3ho734j" path="res://icon.svg" id="1_wrm1d"]
+[ext_resource type="Script" uid="uid://dxmmrrgoukkb" path="res://Scripts/animated_sprite_2d.gd" id="3_wowpa"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qxrlw"]
+load_path = "res://.godot/imported/icon.jpg-64f68b30ea939aa8019167e67dffb2db.ctex"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3tpcr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_wrm1d")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_qxrlw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Game" type="Node2D" unique_id=1958049516]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1281957030]
+sprite_frames = SubResource("SpriteFrames_3tpcr")
+frame_progress = 0.933728
+script = ExtResource("3_wowpa")
