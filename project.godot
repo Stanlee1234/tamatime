@@ -19,6 +19,10 @@ run/main_scene="uid://cu0xlkni363n6"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/borderless=true
+
 [dotnet]
 
 project/assembly_name="Tamatime"
@@ -26,3 +30,7 @@ project/assembly_name="Tamatime"
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
