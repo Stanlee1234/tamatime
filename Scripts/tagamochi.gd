@@ -23,7 +23,7 @@ func _physics_process(delta):
 	if action_timer <= 0:
 		choose_new_action()
 		
-	# 3. Apply the movement
+	# 3. Apply the movements
 	velocity = current_direction * speed
 	move_and_slide()
 	
